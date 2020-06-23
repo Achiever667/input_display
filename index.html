@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <style>
+      *{
+          margin: 0;
+          padding: ;
+      }
+      .container-fluid{
+          display: flex;
+      }
+      .input{
+          margin-left: 100px;
+          margin-top: 80px;
+      }
+      .display{
+          margin-top: 80px;
+          margin-left: 400px;
+      }
+     
+      
+  </style>
+
+  
+<body>
+ <div class="container-fluid ml-5">
+     <div class="input">
+  <form>
+      <h1>Your Form</h1>
+    <label>First Name :</label>
+    <br>
+    <input type="text" name="message" id="firstName">
+<br><br>
+    <label>Last Name : </label>
+    <br>
+    <input type="text" name="message" id="lastName">
+    <br><br>
+    <label>Other Names :</label>
+    <br>
+    <input type="text" name="message" id="otherNames">
+    <br><br>
+    <label> Address : </label>
+    <br>
+    <input type="text" name="message" id="address">
+  </form>
+  <br><br>
+  <input type="submit" class="ml-5" onclick="showInput();"><br/>
+  </div>
+  <div class="display" id="myDIV">
+<h1 id="h1"></h1>  
+<p class="mt-4"><span id='fNameDisplay'></span></p>
+<br>
+  <p class="mt-4"><span id='lNameDisplay'></span></p>
+  <br>
+  <p class="mt-4"><span id='oNameDisplay'></span></p>
+  <br>
+  <p class="mt-4"><span id='addressDisplay'></span></p>
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
